@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ReviewDTO {
+public class ReviewDTO {//리뷰 DTO
 
 	private Long reviewNum;
 	
