@@ -30,5 +30,5 @@ public abstract class BaseEntity {
 	private LocalDateTime modDate;
 
 	
-	//tjwjd
+	//ekfms wntjr
 }
