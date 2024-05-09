@@ -24,4 +24,4 @@ public class MemberDTO {
 	private LocalDateTime regDate;
 	
 }
-//고요한 천재
+//고요한 천재1
