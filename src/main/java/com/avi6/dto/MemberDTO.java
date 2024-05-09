@@ -23,5 +23,6 @@ public class MemberDTO {//회원 DTO
 	
 	private LocalDateTime regDate;
 	
+	
 }
-//고요한 천재123
+//고요한 천재123 그럴리가
