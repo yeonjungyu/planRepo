@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class MemberDTO {
+public class MemberDTO {//회원 DTO
 
 	private Long mid;
 	
@@ -25,3 +25,4 @@ public class MemberDTO {
 	
 	
 }
+//고요한 천재123
