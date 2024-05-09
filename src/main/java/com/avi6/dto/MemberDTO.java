@@ -25,4 +25,4 @@ public class MemberDTO {//회원 DTO
 	
 	
 }
-//고요한 천재123
+//고요한 천재123 그럴리가
