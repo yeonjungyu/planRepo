@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class TripDTO {
+public class TripDTO {//여행계획 DTO
 	
 	private Long mid;
 	
