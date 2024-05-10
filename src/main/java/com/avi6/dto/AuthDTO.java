@@ -14,7 +14,9 @@ import lombok.ToString;
 public class AuthDTO {
 
 	private String email;
+	
 	private String name;
+	
 	private boolean fromSocial;
 	
 	public AuthDTO(String id, String password, boolean fromSocial, Collection<? extends GrantedAuthority> authorities) {

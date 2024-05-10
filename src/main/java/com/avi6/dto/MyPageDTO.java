@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class MyPageDTO {//마이페이지 DTO
 
-	private Long mid;
+	private Long memId;
 	
 	private String email;
 	
