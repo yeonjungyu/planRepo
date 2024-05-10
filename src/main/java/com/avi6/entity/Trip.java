@@ -18,7 +18,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @Getter
 @ToString
-public class Trip extends BaseEntity {
+public class Trip extends BaseEntity {//여행 계획 Entity
 	
 	@Id
 	@GeneratedValue(strategy =  GenerationType.IDENTITY)

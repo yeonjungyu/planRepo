@@ -20,7 +20,7 @@ import lombok.ToString;
 @Getter
 @ToString
 @Table(name = "t_review")
-public class Review {
+public class Review {//댓글 Entity
 	
 	@Id
 	@GeneratedValue(strategy =  GenerationType.IDENTITY)
