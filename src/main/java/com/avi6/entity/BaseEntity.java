@@ -29,6 +29,4 @@ public abstract class BaseEntity {
 	@Column(name = "moddate")
 	private LocalDateTime modDate;
 
-	
-	//ekfms wntjr
 }

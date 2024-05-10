@@ -13,7 +13,9 @@ import lombok.NoArgsConstructor;
 @Builder
 public class TripDTO {//여행계획 DTO
 	
-	private Long mid;
+	private Long memId;
+	
+	private Long tripId;
 	
 	private String nickname;
 
@@ -23,4 +25,14 @@ public class TripDTO {//여행계획 DTO
 	
 	private String place;
 	
+	private Long mapId;
+	
+    private String address;
+    
+    private String addressDetail;
+    
+    private String locationX;
+    
+    private String locationY;
+
 }
