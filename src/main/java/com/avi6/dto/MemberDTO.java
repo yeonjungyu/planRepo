@@ -26,8 +26,6 @@ public class MemberDTO {//회원 DTO
 	
 	private String password;
 	
-	private List<String> roles;
-	
 	private LocalDateTime regDate;
 		
 }
