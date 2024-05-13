@@ -29,4 +29,6 @@ public class Member extends BaseEntity {//회원 Entity
 	private String password;
 	
 	private String nickname;
+	
+	private String wishList;
 }

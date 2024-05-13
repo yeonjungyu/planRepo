@@ -6,7 +6,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -19,30 +18,20 @@ import lombok.ToString;
 @NoArgsConstructor
 @Getter
 @ToString
-@Table(name = "t_review")
-public class Review {//댓글 Entity
-	
+public class WishList extends BaseEntity{
+
 	@Id
 	@GeneratedValue(strategy =  GenerationType.IDENTITY)
-	private Long reviewNum;
-	
-	private String text;//리뷰 내용
-	
-	private int grade;//평점
-	
-	private Long memId;
+	private Long wishId;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Member member;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-	private Trip trip;
+	private Map map;
 	
-	public void setText(String text) {
-		this.text = text;
-	}
+	private String mapImage;
 	
-	public void setGrade(int grade) {
-		this.grade = grade;
-	}
+	private String wishList;
+	
 }

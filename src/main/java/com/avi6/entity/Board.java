@@ -1,12 +1,15 @@
 package com.avi6.entity;
 
+import java.time.LocalDateTime;
+
+
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -19,30 +22,37 @@ import lombok.ToString;
 @NoArgsConstructor
 @Getter
 @ToString
-@Table(name = "t_review")
-public class Review {//댓글 Entity
-	
+public class Board extends BaseEntity{
+
 	@Id
-	@GeneratedValue(strategy =  GenerationType.IDENTITY)
-	private Long reviewNum;
-	
-	private String text;//리뷰 내용
-	
-	private int grade;//평점
-	
-	private Long memId;
-	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long bno;
+
+	private String title;
+
+	private String content;
+
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Member member;
+
+	private LocalDateTime regDate;
+
+	private LocalDateTime modDate;
+
+	private int replyCount;
 	
+	private String boardImage;
+
 	@ManyToOne(fetch = FetchType.LAZY)
-	private Trip trip;
-	
-	public void setText(String text) {
-		this.text = text;
+	@ToString.Exclude
+	private Member nickname;
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
-	
-	public void setGrade(int grade) {
-		this.grade = grade;
+
+	public void setContent(String content) {
+		this.content = content;
 	}
+
 }
