@@ -31,21 +31,14 @@ public class Board extends BaseEntity{
 	private String title;
 
 	private String content;
-
-	@ManyToOne(fetch = FetchType.LAZY)
-	private Member member;
-
-	private LocalDateTime regDate;
-
-	private LocalDateTime modDate;
-
-	private int replyCount;
+	
+	private int visitCount;
 	
 	private String boardImage;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@ToString.Exclude
-	private Member nickname;
+	private Member member;
 
 	public void setTitle(String title) {
 		this.title = title;

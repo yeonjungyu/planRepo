@@ -26,11 +26,11 @@ public class Review {//댓글 Entity
 	@GeneratedValue(strategy =  GenerationType.IDENTITY)
 	private Long reviewNum;
 	
+	private int reviewCount;
+	
 	private String text;//리뷰 내용
 	
 	private int grade;//평점
-	
-	private Long memId;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Member member;

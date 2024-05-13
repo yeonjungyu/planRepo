@@ -28,16 +28,5 @@ public abstract class BaseEntity {
 	@LastModifiedDate
 	@Column(name = "moddate")
 	private LocalDateTime modDate;
-	
-	@LastModifiedDate
-	@Column(name = "startdate")
-	private LocalDateTime startDate;
-	
-	@LastModifiedDate
-	@Column(name = "enddate")
-	private LocalDateTime EndDate;
-	
-	@Column(name = "email", updatable = false)//수정금지, 컬럼명은 regdate로 설정
-	private String email;
 
 }

@@ -31,4 +31,6 @@ public class Map {
     private String addressDetail;
     
     private String planImage;
+    
+    private String mapImage;
 }

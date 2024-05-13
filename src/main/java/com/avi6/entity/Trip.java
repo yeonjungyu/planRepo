@@ -1,5 +1,11 @@
 package com.avi6.entity;
 
+import java.time.LocalDateTime;
+
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -23,10 +29,6 @@ public class Trip extends BaseEntity {//여행 계획 Entity
 	@Id
 	@GeneratedValue(strategy =  GenerationType.IDENTITY)
 	private Long tripId;
-	
-	private String place;
-	
-	private String nickname;
 
 	private String title;
 	
@@ -40,5 +42,18 @@ public class Trip extends BaseEntity {//여행 계획 Entity
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Member member;
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Map map;
+	
+	
+	@CreatedDate
+	@Column(name = "startdate")//수정금지, 컬럼명은 regdate로 설정
+	private LocalDateTime startDate;
+	
+	@LastModifiedDate
+	@Column(name = "enddate")
+	private LocalDateTime endDate;
+	
 
 }
